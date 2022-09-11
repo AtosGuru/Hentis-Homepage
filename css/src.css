@@ -1,0 +1,170 @@
+body {
+  background: #000000;
+  /* padding:20px; */
+  padding-bottom:0px;
+}
+p {
+  margin:0px;
+  padding:0px;
+}
+.social-sm {
+  display: none  !important;
+}
+.body-container {
+  /* max-width: 1440px !important; */
+  margin: auto;
+}
+.mt-40 {
+  margin-top:40px;
+}
+section.section {
+background: #1D1C1C;
+border: 3px solid #676666;
+border-radius: 20px;
+}
+.navbar {
+  background-color: black !important;
+  padding-top:15px !important;
+  padding-bottom:15px !important;
+  /* border-radius: 20px; */
+  width:100%;
+  border-bottom: 2px solid white;
+}
+.navbar .navbar-brand {
+  color: white;
+  display: flex;
+  align-items: center;
+  /* width: 225px; */
+  height: 42px;
+/* font-family: 'Inter'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 42px;
+}
+.navbar {
+}
+.navbar .navbar-brand:hover {
+  color: white;
+}
+.navbar .btn-launch:hover {
+  text-decoration: none !important;
+}
+
+.navbar .navbar-brand img {
+  margin-right: 10px;
+}
+.btn-launch {
+  width: 170px;
+  height: 42px;
+  background: url("../img/btn-bg.png");
+  border-radius: 40px;
+  background-size: cover;
+  padding:0px;
+}
+.btn-launch {
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+}
+.btn-launch:hover {
+  text-decoration: none !important;
+}
+.nav-item a{
+  color: white  !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.nav-link.active {
+  color: #00E276 !important;
+}
+.nav-item img {
+  width: 25px;
+  height: 23px;
+  margin-right:5px;
+}
+.icon {
+  width: 25px;
+  height: 23px;
+  margin-right:5px;
+}
+ul.navbar-nav {
+  width: 100%;
+  justify-content: left;
+}
+ul.navbar-nav li {
+  margin-right:10px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-0 {
+  padding: 0px !important;
+}
+.min-0 {
+  min-height: 0px !important;
+}
+.w-80 {
+  width: 80%;
+}
+.mt-30 {
+  margin-top:30px;
+}
+.f-right {
+  float: right;
+}
+.m-80 {
+  margin-top: 80px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1378px) { 
+
+}
+@media only screen and (max-width: 1202px) { 
+ 
+}
+@media only screen and (max-width: 1094px) { 
+ 
+}
+@media only screen and (max-width: 1003px) { 
+  
+}
+.m-0 {
+  margin: 0px !important;
+}
+.navbar-toggler-icon {
+  background-image: url('../img/menubar.jpg') !important; 
+}
+@media only screen and (max-width: 768px) {
+ 
+}
+
+@media only screen and (max-width: 576px) {
+  
+}
+
