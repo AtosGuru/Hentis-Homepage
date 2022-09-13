@@ -22,6 +22,18 @@
     <link rel="stylesheet" href="css/src.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <title>Hentis</title>
+    <script>
+      $(document).ready(function() {
+        $(".btn-launch").click(function() {
+         var first = $(this).html();
+         $(this).html("Coming Soon");
+        $(".btn-gradient-border").click(function() {
+          $(this).html("Coming Soon");
+        })
+        })
+      })
+     
+    </script>
   </head>
 
   <body class="body-container">
@@ -50,20 +62,21 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Docs</a>
+                <a class="nav-link" href="https://docs.hentis.one">Docs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="https://"
+                <a class="nav-link " href="https://hentis.medium.com"
                   tabindex="-1"
                   aria-disabled="true">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#" tabindex="-1"
+                <a class="nav-link " href="https://docs.hentis.one/roadmap"
+                  tabindex="-1"
                   aria-disabled="true">Roadmap</a>
               </li>
             </ul>
             <a class="form-inline my-2 my-lg-0 launch-link"
-              href="https://hentis.one">
+              href="#">
               <button class="btn
                 btn-launch m-0 text-white" type="button"><img
                   src="img/icon/launch.png" class="icon"/>Launch App</button>
@@ -97,8 +110,9 @@
             <div class="d-flex justify-between mt-4">
               <button class="btn btn-grad
                 btn-launch m-0 text-white" type="button">Launch App</button>
-              <button class="btn btn-gradient-border m-0 text-white"
-                type="button">Docs</button>
+              <a href="#"><button class="btn
+                  btn-gradient-border m-0 text-white"
+                  type="button">Docs</button></a>
             </div>
           </div>
           <div class="col-md-6">
@@ -183,7 +197,7 @@
 
           <div class="row col-md-12 mt-2 p-3 partner">
             <div class="col-md-6 radius-border-left ">
-              <div class="d-flex justify-between">
+              <div class="d-flex justify-between partner-div">
                 <p class="text-gradient">Partners & Investors</p>
                 <button class="btn btn-gradient-border m-0 text-white"
                   type="button">Access</button>
@@ -259,12 +273,18 @@
             </div>
             <div class="col-md-6 col-sm-12 d-flex justify-between
               social-div">
-              <div class="social-img social-twitter"></div>
-              <div class="social-img social-discord"></div>
-              <div class="social-img social-github"></div>
-              <div class="social-img social-telegram"></div>
-              <div class="social-img social-m"></div>
-              <div class="social-img social-docs"></div>
+              <a href="https://twitter.com/Hentis_one"><div class="social-img
+                  social-twitter"></div></a>
+              <a href="https://discord.gg/NBnhV8tsjj"><div class="social-img
+                  social-discord"></div></a>
+              <a href="https://github.com/hentis-one"><div class="social-img
+                  social-github"></div></a>
+              <a href="https://t.me/Hentis_one"><div class="social-img
+                  social-telegram"></div></a>
+              <a href="http://hentis.medium.com"><div class="social-img
+                  social-m"></div></a>
+              <a href="https://docs.hentis.one"><div class="social-img
+                  social-docs"></div></a>
 
             </div>
             <div class="col-md-3">

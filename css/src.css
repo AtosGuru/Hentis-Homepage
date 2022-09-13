@@ -350,6 +350,10 @@ border-radius: 50%;
   }
 }
 @media only screen and (max-width: 768px) {
+  .partner-div {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
  .social-div {
   margin-top:30px;
   margin-bottom:30px;
@@ -392,6 +396,10 @@ color: #BCB8B8;
 .radius-border-right {
   border-radius: 40px  !important;
 }
+.moved img.logo {
+  width:100px !important;
+  height:100px !important;
+}
 }
 
 @media only screen and (max-width: 576px) {
@@ -423,6 +431,10 @@ color: #BCB8B8;
   } */
   .btn-gradient-border {
     width:140px;
+  }
+  .moved img.logo {
+    width:80px !important;
+    height:80px !important;
   }
 }
 
