@@ -1,0 +1,984 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/src.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>SilkSwap</title>
+  </head>
+
+  <body class="body-container">
+    <section class="header pb-32">
+      <div class="nav ">
+        <!-- component -->
+        <div class="w-full m-0 bg-transparent flex">
+          <p class="logo-title mr-4 py-10 items-center flex
+            justify-center
+            title">SilkSwap.</p>
+          <div class="w-full">
+            <div class="mx-auto px-4">
+              <div class="flex items-center justify-between py-4">
+                <div class="text-white flex justify-center items-center">
+
+                  <a href="#_" class="hidden xl:flex flex inline-block px-4 py-2
+                    mx-auto
+                    text-white
+                    rounded-full md:mx-0
+                    bg-gray mr-4 connect-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                      fill="currentColor" class="w-6 h-6 size-10 color-green
+                      mr-2">
+                      <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75
+                        4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365
+                        9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5
+                        0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5
+                        0v-2.25H15a.75.75 0 000-1.5h-2.25V9z"
+                        clip-rule="evenodd" />
+                      </svg>
+
+
+                      <span class="mr-1">Last synced block:</span>
+                      <span class="color-green">13609303</span>
+                    </a>
+                  </div>
+
+                  <div class="hidden md:flex sm:items-center ">
+                    <a href="#" class="text-white text-sm font-semibold
+                      hover:text-gray-600 mx-4">Trade</a>
+                    <a href="#" class="text-white text-sm font-semibold
+                      hover:text-gray-600 mr-4">Staking</a>
+                    <a href="#" class="text-white text-sm font-semibold
+                      hover:text-gray-600 mr-4">About</a>
+                    <a href="#" class="text-white text-sm font-semibold
+                      hover:text-gray-600 mr-4">Contact</a>
+                  </div>
+
+                  <div class="hidden sm:flex sm:items-center ">
+                    <a href="#_" class=" inline-block px-2 py-2
+                      mx-auto
+                      text-white
+                      rounded-full md:mx-0
+                      bg-gray mr-4 connect-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24
+                        24" fill="currentColor" class="w-6 h-6 color-yellow">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077
+                          1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093
+                          1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271
+                          1.136-.964 2.033-1.96 1.425L12 18.354 7.373
+                          21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433
+                          2.082-5.006z" clip-rule="evenodd" />
+                        </svg>
+
+                      </a>
+                      <a href="#_" class=" flex inline-block px-4 py-2 mx-auto
+                        text-white
+                        rounded-full md:mx-0
+                        bg-gray mr-4 connect-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24
+                          24"
+                          fill="currentColor" class="w-6 h-6 size-10 color-green
+                          mr-2">
+                          <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75
+                            4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365
+                            9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0
+                            00-1.5
+                            0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5
+                            0v-2.25H15a.75.75 0 000-1.5h-2.25V9z"
+                            clip-rule="evenodd" />
+                          </svg>
+
+
+                          Ethereum Mainnet
+                        </a>
+                        <a href="#_" class="inline-block px-4 py-2 mx-auto
+                          text-white
+                          rounded-full  md:mx-0
+                          bg-red-600 ml-4 justify-center wallet-connect">
+                          Launch app
+                        </a>
+
+                      </div>
+
+                      <div class="flex hidden cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6
+                          text-white" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M12.9499909,17
+                            C12.7183558,18.1411202 11.709479,19 10.5,19
+                            C9.29052104,19 8.28164422,18.1411202 8.05000906,17
+                            L3.5,17 C3.22385763,17 3,16.7761424 3,16.5
+                            C3,16.2238576
+                            3.22385763,16 3.5,16 L8.05000906,16
+                            C8.28164422,14.8588798 9.29052104,14 10.5,14
+                            C11.709479,14 12.7183558,14.8588798 12.9499909,16
+                            L20.5,16 C20.7761424,16 21,16.2238576 21,16.5
+                            C21,16.7761424 20.7761424,17 20.5,17 L12.9499909,17
+                            Z
+                            M18.9499909,12 C18.7183558,13.1411202 17.709479,14
+                            16.5,14 C15.290521,14 14.2816442,13.1411202
+                            14.0500091,12 L3.5,12 C3.22385763,12 3,11.7761424
+                            3,11.5
+                            C3,11.2238576 3.22385763,11 3.5,11 L14.0500091,11
+                            C14.2816442,9.85887984 15.290521,9 16.5,9
+                            C17.709479,9
+                            18.7183558,9.85887984 18.9499909,11 L20.5,11
+                            C20.7761424,11 21,11.2238576 21,11.5 C21,11.7761424
+                            20.7761424,12 20.5,12 L18.9499909,12 Z M9.94999094,7
+                            C9.71835578,8.14112016 8.70947896,9 7.5,9
+                            C6.29052104,9
+                            5.28164422,8.14112016 5.05000906,7 L3.5,7
+                            C3.22385763,7
+                            3,6.77614237 3,6.5 C3,6.22385763 3.22385763,6 3.5,6
+                            L5.05000906,6 C5.28164422,4.85887984 6.29052104,4
+                            7.5,4
+                            C8.70947896,4 9.71835578,4.85887984 9.94999094,6
+                            L20.5,6
+                            C20.7761424,6 21,6.22385763 21,6.5 C21,6.77614237
+                            20.7761424,7 20.5,7 L9.94999094,7 Z M7.5,8
+                            C8.32842712,8
+                            9,7.32842712 9,6.5 C9,5.67157288 8.32842712,5 7.5,5
+                            C6.67157288,5 6,5.67157288 6,6.5 C6,7.32842712
+                            6.67157288,8 7.5,8 Z M16.5,13 C17.3284271,13
+                            18,12.3284271 18,11.5 C18,10.6715729 17.3284271,10
+                            16.5,10 C15.6715729,10 15,10.6715729 15,11.5
+                            C15,12.3284271 15.6715729,13 16.5,13 Z M10.5,18
+                            C11.3284271,18 12,17.3284271 12,16.5 C12,15.6715729
+                            11.3284271,15 10.5,15 C9.67157288,15 9,15.6715729
+                            9,16.5
+                            C9,17.3284271 9.67157288,18 10.5,18 Z"/>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="block sm:hidden py-2
+                        responsive-nav">
+                        <div class="flex flex-col">
+                          <div class="flex justify-center">
+                            <a href="#" class="text-white text-sm font-semibold
+                              hover:text-gray-600 mx-4 ">Trade</a>
+                            <a href="#" class="text-white text-sm font-semibold
+                              hover:text-gray-600 mr-4 ">Staking</a>
+                            <a href="#" class="text-white text-sm font-semibold
+                              hover:text-gray-600 mr-4 ">About</a>
+                            <a href="#" class="text-white text-sm font-semibold
+                              hover:text-gray-600 mr-4 ">Contact</a>
+                          </div>
+                          <div class="md:flex justify-between items-center
+                            mt-2
+                            pt-2 px-10">
+                            <div class="flex justify-between mb-2">
+                              <a href="#_" class=" inline-block px-2 py-2
+                                mx-auto
+                                text-white
+                                rounded-full md:mx-0
+                                bg-gray mr-4 connect-btn responsive-star">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 24
+                                  24" fill="currentColor" class="w-6 h-6
+                                  color-yellow">
+                                  <path fill-rule="evenodd" d="M10.788
+                                    3.21c.448-1.077
+                                    1.976-1.077 2.424 0l2.082 5.007
+                                    5.404.433c1.164.093
+                                    1.636 1.545.749 2.305l-4.117 3.527 1.257
+                                    5.273c.271
+                                    1.136-.964 2.033-1.96 1.425L12 18.354 7.373
+                                    21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433
+                                    2.082-5.006z" clip-rule="evenodd" />
+                                  </svg>
+                                </a>
+                                <a href="#_" class=" flex inline-block px-4 py-2
+                                  mx-auto
+                                  text-white
+                                  rounded-full md:mx-0
+                                  bg-gray mr-4 connect-btn align-recenter
+                                  w-full">
+                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0
+                                    0
+                                    24
+                                    24"
+                                    fill="currentColor" class="w-6 h-6 size-10
+                                    color-green
+                                    mr-2">
+                                    <path fill-rule="evenodd" d="M12 2.25c-5.385
+                                      0-9.75
+                                      4.365-9.75 9.75s4.365 9.75 9.75 9.75
+                                      9.75-4.365
+                                      9.75-9.75S17.385 2.25 12 2.25zM12.75
+                                      9a.75.75
+                                      0
+                                      00-1.5
+                                      0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0
+                                      001.5
+                                      0v-2.25H15a.75.75 0 000-1.5h-2.25V9z"
+                                      clip-rule="evenodd" />
+                                    </svg>
+
+
+                                    Ethereum Mainnet
+                                  </a>
+                                </div>
+
+                                <!-- <a href="#_" class="inline-block px-4 py-2 mx-auto
+                                text-white
+                                bg-blue-600 rounded-full hover:bg-blue-700
+                                md:mx-0
+                                bg-red-600 ml-4 align-recenter">
+                                Launch app
+                              </a> -->
+                                <a href="#_" class=" flex
+                                  inline-block px-4 py-2
+                                  mx-auto
+                                  text-white
+                                  rounded-full md:mx-0
+                                  w-full
+                                  bg-gray connect-btn">
+                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor" class="w-6 h-6 size-10
+                                    color-green
+                                    mr-2">
+                                    <path fill-rule="evenodd" d="M12 2.25c-5.385
+                                      0-9.75
+                                      4.365-9.75 9.75s4.365 9.75 9.75 9.75
+                                      9.75-4.365
+                                      9.75-9.75S17.385 2.25 12 2.25zM12.75
+                                      9a.75.75 0 00-1.5
+                                      0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0
+                                      001.5
+                                      0v-2.25H15a.75.75 0 000-1.5h-2.25V9z"
+                                      clip-rule="evenodd" />
+                                    </svg>
+
+
+                                    <span class="mr-1">Last synced block:</span>
+                                    <span class="color-green">13609303</span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h1 class="mt-72 sm:mt-36 xl:mt-48 text-white text-center
+                      text-4xl md:text-5xl
+                      xl:text-6xl 2xl:text-7xl font-bold leading-10 title ">
+                      Beginners Guide<br/>
+                        to DEX Blockchain Gate
+                      </h1>
+                      <div class="text-center mt-20">
+                        <a href="#_" class="relative inline-flex items-center
+                          justify-start
+                          inline-block px-5 py-3 overflow-hidden font-bold
+                          rounded-full
+                          group text-white mb-2 sm:mr-4
+                          bg-red-600 wallet-connect">
+                          Launch app
+                        </a>
+                        <a href="#_" class="relative inline-flex items-center
+                          justify-start
+                          inline-block px-5 py-3 overflow-hidden font-bold
+                          rounded-full
+                          group">
+                          <span class="relative w-full text-left text-white
+                            transition-colors duration-200 ease-in-out
+                            group-hover:text-gray-900 m-0">Learn more</span>
+                          <span class="absolute inset-0 border-2 border-white
+                            rounded-full"></span>
+                        </a>
+                      </div>
+                    </section>
+                    <section class="liquidity container py-24 xl:py-40  2xl:py-52 xl:px-4
+                      2xl:px-32">
+
+                      <p class="text-center text-4xl 2xl:text-5xl font-bold
+                        text-[#2E2E2E] title">Trusted.
+                        Secured.<br/>
+                          Bilions of Liquidity.
+                        </p>
+
+                        <p class="text-center text-xl xl:text-2xl 2xl:text-3xl
+                          mt-12
+                          mb-12 ">
+                          CornSwap has the most users of any decentralized
+                          platform,
+                          ever. And those users are now entrusting the platform
+                          with
+                          over $15 billion in funds.
+                        </p>
+
+                        <div class="w-5/6 md:flex items-stretch md:items-center
+                          justify-between m-auto">
+                          <div class="contain-div align-recenter py-4 px-4
+                            w-80">
+                            <p>Monthly active users</p>
+                            <!-- <small class="mt-10 mb-10 flex bg-green color-green w-16
+                          justify-center items-center rounded-sm px-2 a">+11.87
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0
+                            20 20" fill="currentColor" class="w-5 h-5">
+                            <path fill-rule="evenodd" d="M14.77 12.79a.75.75 0
+                              01-1.06-.02L10 8.832 6.29 12.77a.75.75 0
+                              11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25
+                              4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd" />
+                            </svg>
+
+                          </small> -->
+                            <p class="mt-10 mb-10"><small class=" bg-green
+                                color-green p-1 px-2 rounded-sm flex w-14
+                                align-recenter">+11.87
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0
+                                  0
+                                  20 20" fill="currentColor" class="w-5 h-5">
+                                  <path fill-rule="evenodd" d="M14.77
+                                    12.79a.75.75
+                                    0
+                                    01-1.06-.02L10 8.832 6.29 12.77a.75.75 0
+                                    11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25
+                                    4.5a.75.75 0 01-.02 1.06z"
+                                    clip-rule="evenodd"
+                                    />
+                                  </svg></small></p>
+                              <p class="text-4xl 2xl:text-5xl font-bold title">420K</p>
+                            </div>
+                            <div class="contain-div align-recenter py-4 px-4
+                              w-80
+                              bg-red-600">
+                              <p class="text-white">Trades made in 30 days</p>
+                              <p class="mt-10 mb-10">
+                                <small class=" text-red-600">+11.87</small>
+                              </p>
+                              <p class="text-4xl 2xl:text-5xl font-bold
+                                text-white
+                                title">5.1
+                                M</p>
+                            </div>
+                            <div class="contain-div align-recenter py-4 px-4
+                              w-80
+                              rounded-sm">
+                              <p>Liquidity provided</p>
+                              <p class="mt-10 mb-10"><small class=" bg-pink
+                                  color-pink p-1 px-2 rounded-sm ">Locked</small></p>
+                              <p class="text-4xl 2xl:text-5xl font-bold title">$3.9B</p>
+                            </div>
+                          </div>
+                        </section>
+
+                        <section class="metamask container xl:px-4 2xl:px-32">
+                          <img src="./img/metamask.png" class="m-auto mb-8"/>
+                          <p class="text-center">HOW IT WORKS?</p>
+                          <p class="text-center text-4xl 2xl:text-5xl font-bold
+                            text-[#2E2E2E]
+                            mt-4 title">
+                            Install Metamask
+                          </p>
+                          <p class="text-center text-xl xl:text-2xl 2xl:text-3xl
+                            mt-12 mb-20 xl:mb-40 2xl:mb-52 ">
+                            CornSwap has the most users of any decentralized
+                            platform,
+                            ever. And those users are now entrusting the
+                            platform
+                            with
+                            over $15 billion in funds.
+                          </p>
+                        </section>
+
+                        <section class="swap container xl:px-4 2xl:px-32 ">
+                          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                            <div class="align-recenter">
+                              <p class=" text-4xl 2xl:text-5xl font-bold
+                                text-[#2E2E2E] pt-4 title">
+                                Chose any tokens<br/>
+                                  to swap in ecosystem
+                                </p>
+                                <p class=" text-xl xl:text-2xl mt-12 mb-12 ">
+                                  CornSwap has the most users of any
+                                  decentralized
+                                  platform,
+                                  ever. And those users are now entrusting the
+                                  platform
+                                  with
+                                  over $15 billion in funds.
+                                </p>
+                                <div class=" mt-12">
+                                  <a href="#_" class="relative inline-flex
+                                    items-center
+                                    justify-start
+                                    inline-block px-5 py-3 overflow-hidden
+                                    font-bold
+                                    rounded-full
+                                    group text-white mr-4
+                                    bg-red-600 align-recenter">
+                                    Launch app
+                                  </a>
+                                  <a href="#_" class="relative inline-flex
+                                    items-center
+                                    justify-start
+                                    inline-block px-5 py-3 overflow-hidden
+                                    font-bold
+                                    rounded-full
+                                    group">
+                                    <span class="relative w-full text-left
+                                      transition-colors duration-200 ease-in-out
+                                      group-hover:text-gray-900 align-recenter
+                                      m-0">Learn
+                                      more</span>
+                                    <span class="absolute inset-0 border-2
+                                      border-black
+                                      rounded-full"></span>
+                                  </a>
+                                </div>
+                              </div>
+
+                              <div>
+                                <div class="swap-platform w-full xl:w-4/5 p-8
+                                  float-right">
+                                  <div class="selector p-2 lg:p-8 flex
+                                    justify-between">
+                                    <div class="flex items-center ">
+                                      <img src="img/ethereum.png">
+                                      <div class="px-2">
+                                        <p class="text-md xl:text-xl
+                                          font-medium">Ethereum
+                                          (ETH)</p>
+                                        <p>
+                                          <span>Balance:</span>
+                                          <span class="font-medium">2.508298 ETH</span>
+                                          <span class="max-btn px-2
+                                            text-black
+                                            ml-2">Max</span>
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <p class="text-3xl font-bold text-black flex
+                                      items-center">0.00</p>
+                                  </div>
+                                  <div class="selector p-2 lg:p-8 flex
+                                    justify-between">
+                                    <div class="flex items-center ">
+                                      <p class="selector-btn flex px-4 py-3
+                                        font-medium items-center">
+                                        <span class="mr-2">Select a token</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 20 20"
+                                          fill="currentColor"
+                                          class="w-5 h-5">
+                                          <path fill-rule="evenodd" d="M5.23
+                                            7.21a.75.75 0 011.06.02L10
+                                            11.168l3.71-3.938a.75.75 0 111.08
+                                            1.04l-4.25 4.5a.75.75 0 01-1.08
+                                            0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                          </svg>
+                                        </p>
+                                      </div>
+                                      <p class="text-3xl font-bold text-black
+                                        flex items-center">0.00</p>
+                                    </div>
+
+                                    <a href="#_" class="inline-block px-5 py-4
+                                      mt-2
+                                      w-full text-white bg-blue-600 rounded-full
+                                      hover:bg-blue-700 md:mx-0 texl-2xl
+                                      2xl:text-3xl
+                                      text-center">
+                                      Smart Swap
+                                    </a>
+                                    <div class="flex mt-4 ">
+                                      <div class="p-4 rounded-md bg-[#DCDCDC]
+                                        flex
+                                        justify-between mr-2 w-full">
+                                        <p class="font-medium text-md
+                                          xl:text-xl">Slippage
+                                          tollerance</p>
+                                        <p class="font-medium text-md
+                                          xl:text-xl">0.10%</p>
+                                      </div>
+                                      <p class="p-4 rounded-md bg-[#DCDCDC]
+                                        cursor-pointer">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 20 20"
+                                          fill="currentColor"
+                                          class="w-5 h-5">
+                                          <path fill-rule="evenodd" d="M8.34
+                                            1.804A1
+                                            1 0 019.32 1h1.36a1 1 0
+                                            01.98.804l.295
+                                            1.473c.497.144.971.342
+                                            1.416.587l1.25-.834a1 1 0
+                                            011.262.125l.962.962a1 1 0 01.125
+                                            1.262l-.834
+                                            1.25c.245.445.443.919.587
+                                            1.416l1.473.294a1 1 0
+                                            01.804.98v1.361a1
+                                            1 0 01-.804.98l-1.473.295a6.95 6.95
+                                            0
+                                            01-.587 1.416l.834 1.25a1 1 0
+                                            01-.125
+                                            1.262l-.962.962a1 1 0
+                                            01-1.262.125l-1.25-.834a6.953 6.953
+                                            0
+                                            01-1.416.587l-.294 1.473a1 1 0
+                                            01-.98.804H9.32a1 1 0
+                                            01-.98-.804l-.295-1.473a6.957 6.957
+                                            0
+                                            01-1.416-.587l-1.25.834a1 1 0
+                                            01-1.262-.125l-.962-.962a1 1 0
+                                            01-.125-1.262l.834-1.25a6.957 6.957
+                                            0
+                                            01-.587-1.416l-1.473-.294A1 1 0 011
+                                            10.68V9.32a1 1 0
+                                            01.804-.98l1.473-.295c.144-.497.342-.971.587-1.416l-.834-1.25a1
+                                            1 0 01.125-1.262l.962-.962A1 1 0
+                                            015.38
+                                            3.03l1.25.834a6.957 6.957 0
+                                            011.416-.587l.294-1.473zM13 10a3 3 0
+                                            11-6 0 3 3 0 016 0z"
+                                            clip-rule="evenodd"
+                                            />
+                                          </svg>
+
+                                        </p>
+                                      </div>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </section>
+                              <section class="trade mt-20 xl:mt-40 2xl:mt-52 py-24
+                                2xl:py-32">
+                                <div class="container m-auto xl:px-4 2xl:px-32">
+                                  <div class="grid grid-cols-1 lg:grid-cols-2
+                                    gap-4">
+                                    <div class="">
+                                      <div class="swap-platform w-full xl:w-4/5
+                                        p-8">
+                                        <div class="selector p-2 lg:p-8 flex
+                                          justify-between">
+                                          <div class="flex items-center ">
+                                            <img src="img/ethereum.png">
+                                            <div class="px-2">
+                                              <p class="text-md xl:text-xl
+                                                font-medium">Ethereum
+                                                (ETH)</p>
+                                              <p>
+                                                <span>Balance:</span>
+                                                <span class="font-medium">2.508298
+                                                  ETH</span>
+                                                <span class="max-btn px-2
+                                                  text-black ml-2">Max</span>
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <p class="text-3xl font-bold
+                                            text-black flex items-center">0.00</p>
+                                        </div>
+                                        <div class="selector p-2 lg:p-8 flex
+                                          justify-between">
+                                          <div class="flex items-center ">
+                                            <p class="selector-btn flex px-4
+                                              py-3
+                                              font-medium items-center">
+                                              <span class="mr-2">Select a token</span>
+                                              <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20"
+                                                fill="currentColor" class="w-5
+                                                h-5">
+                                                <path fill-rule="evenodd"
+                                                  d="M5.23
+                                                  7.21a.75.75 0 011.06.02L10
+                                                  11.168l3.71-3.938a.75.75 0
+                                                  111.08
+                                                  1.04l-4.25 4.5a.75.75 0
+                                                  01-1.08
+                                                  0l-4.25-4.5a.75.75 0
+                                                  01.02-1.06z"
+                                                  clip-rule="evenodd" />
+                                                </svg>
+                                              </p>
+                                            </div>
+                                            <p class="text-3xl font-bold
+                                              text-black flex items-center">0.00</p>
+                                          </div>
+
+                                          <a href="#_" class="inline-block px-5
+                                            py-4
+                                            mt-2 w-full text-white bg-blue-600
+                                            rounded-full hover:bg-blue-700
+                                            md:mx-0
+                                            texl-2xl 2xl:text-3xl text-center">
+                                            Smart Swap
+                                          </a>
+                                          <div class="flex mt-4 ">
+                                            <div class="p-4 rounded-md
+                                              bg-[#DCDCDC]
+                                              flex justify-between mr-2 w-full">
+                                              <p class="font-medium text-md
+                                                xl:text-xl">Slippage
+                                                tollerance</p>
+                                              <p class="font-medium text-md
+                                                xl:text-xl">0.10%</p>
+                                            </div>
+                                            <p class="p-4 rounded-md
+                                              bg-[#DCDCDC]
+                                              cursor-pointer">
+                                              <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20"
+                                                fill="currentColor" class="w-5
+                                                h-5">
+                                                <path fill-rule="evenodd"
+                                                  d="M8.34
+                                                  1.804A1 1 0 019.32 1h1.36a1 1
+                                                  0
+                                                  01.98.804l.295
+                                                  1.473c.497.144.971.342
+                                                  1.416.587l1.25-.834a1 1 0
+                                                  011.262.125l.962.962a1 1 0
+                                                  01.125
+                                                  1.262l-.834
+                                                  1.25c.245.445.443.919.587
+                                                  1.416l1.473.294a1 1 0
+                                                  01.804.98v1.361a1 1 0
+                                                  01-.804.98l-1.473.295a6.95
+                                                  6.95
+                                                  0
+                                                  01-.587 1.416l.834 1.25a1 1 0
+                                                  01-.125 1.262l-.962.962a1 1 0
+                                                  01-1.262.125l-1.25-.834a6.953
+                                                  6.953
+                                                  0 01-1.416.587l-.294 1.473a1 1
+                                                  0
+                                                  01-.98.804H9.32a1 1 0
+                                                  01-.98-.804l-.295-1.473a6.957
+                                                  6.957
+                                                  0 01-1.416-.587l-1.25.834a1 1
+                                                  0
+                                                  01-1.262-.125l-.962-.962a1 1 0
+                                                  01-.125-1.262l.834-1.25a6.957
+                                                  6.957
+                                                  0 01-.587-1.416l-1.473-.294A1
+                                                  1
+                                                  0
+                                                  011 10.68V9.32a1 1 0
+                                                  01.804-.98l1.473-.295c.144-.497.342-.971.587-1.416l-.834-1.25a1
+                                                  1 0 01.125-1.262l.962-.962A1 1
+                                                  0
+                                                  015.38 3.03l1.25.834a6.957
+                                                  6.957
+                                                  0
+                                                  011.416-.587l.294-1.473zM13
+                                                  10a3
+                                                  3
+                                                  0
+                                                  11-6 0 3 3 0 016 0z"
+                                                  clip-rule="evenodd" />
+                                                </svg>
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="align-recenter">
+                                          <div class="w-full xl:w-4/5
+                                            float-right
+                                            trade-anyth">
+                                            <p class=" text-4xl 2xl:text-5xl
+                                              font-bold
+                                              text-[#2E2E2E]
+                                              pt-4 title ">
+                                              Trade anything.<br/>
+                                                No registration,<br/>
+                                                  no hassle.
+                                                </p>
+                                                <p class=" text-xl xl:text-2xl
+                                                  mt-12
+                                                  mb-12 ">
+                                                  CornSwap has the most users of
+                                                  any
+                                                  decentralized
+                                                  platform,
+                                                  ever. And those users are now
+                                                  entrusting the
+                                                  platform
+                                                  with
+                                                  over $15 billion in funds.
+                                                </p>
+                                                <div class=" mt-12">
+                                                  <a href="#_" class="relative
+                                                    inline-flex
+                                                    items-center
+                                                    justify-start
+                                                    inline-block px-5 py-3
+                                                    overflow-hidden font-bold
+                                                    rounded-full
+                                                    group text-white mr-4
+                                                    bg-red-600
+                                                    align-recenter">
+                                                    Launch app
+                                                  </a>
+                                                  <a href="#_" class="relative
+                                                    inline-flex
+                                                    items-center
+                                                    justify-start
+                                                    inline-block px-5 py-3
+                                                    overflow-hidden font-bold
+                                                    rounded-full
+                                                    group">
+                                                    <span class="relative w-full
+                                                      text-left
+                                                      transition-colors
+                                                      duration-200
+                                                      ease-in-out
+                                                      group-hover:text-gray-900
+                                                      align-recenter m-0">Learn
+                                                      more</span>
+                                                    <span class="absolute
+                                                      inset-0
+                                                      border-2
+                                                      border-black
+                                                      rounded-full"></span>
+                                                  </a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </section>
+                                      <section class="audit container py-24
+                                        xl:py-40 2xl:py-52 xl:px-4 2xl:px-32">
+                                        <div class="grid grid-cols-1
+                                          lg:grid-cols-2
+                                          gap-4">
+                                          <div class="align-recenter">
+                                            <p class=" text-4xl 2xl:text-5xl
+                                              font-bold
+                                              text-[#2E2E2E] pt-4 title">
+                                              Security Audits
+                                            </p>
+                                            <p class=" text-xl xl:text-2xl mt-12
+                                              mb-12 ">
+                                              CornSwap has the most users of any
+                                              decentralized
+                                              platform,
+                                              ever. And those users are now
+                                              entrusting the
+                                              platform
+                                              with
+                                              over $15 billion in funds.
+                                            </p>
+                                            <div class=" mt-12">
+                                              <a href="#_" class="inline-flex
+                                                items-center justify-center h-16
+                                                px-3 py-0 text-md xl:text-xl
+                                                font-semibold text-center
+                                                hover:text-black no-underline
+                                                align-middle transition-all
+                                                duration-300 ease-in-out
+                                                bg-transparent border-2
+                                                border-gray-600 border-solid
+                                                rounded-full cursor-pointer
+                                                select-none text-black
+                                                focus:shadow-xs
+                                                focus:no-underline
+                                                flex items-center">
+                                                <div class="flex items-center
+                                                  mr-4
+                                                  justify-between">
+                                                  <img src="img/meta.png"
+                                                    class="mr-1">
+                                                  <div>
+                                                    <small class="p-0 ">Audited
+                                                      by CERTIK</small>
+                                                    <p class="p-0 m-2-r
+                                                      font-medium">FINAL SCORE</p>
+                                                  </div>
+                                                </div>
+                                                <p class="bg-green text-white
+                                                  rounded-full px-2 py-1">95</p>
+                                              </a>
+                                            </div>
+                                          </div>
+
+                                          <div>
+                                            <div class="grid grid-rows-2
+                                              grid-cols-2
+                                              gap-4 items-center
+                                              justify-center">
+                                              <div>
+                                                <img src="img/mark/1.png"
+                                                  class="justify-center
+                                                  m-auto"/>
+                                              </div>
+                                              <div>
+                                                <img src="img/mark/2.png"
+                                                  class="justify-center m-auto"
+                                                  />
+                                              </div>
+                                              <div>
+                                                <img src="img/mark/3.png"
+                                                  class="justify-center m-auto"
+                                                  />
+                                              </div>
+                                              <div>
+                                                <img src="img/mark/4.png"
+                                                  class="justify-center m-auto"
+                                                  />
+                                              </div>
+
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </section>
+                                      <section class="footer py-24 2xl:py-32
+                                        xl:px-4
+                                        2xl:px-32 pb-0">
+                                        <div class="container xl:px-4
+                                          2xl:px-32">
+                                          <div class="w-full mb-0 md:mb-4
+                                            md:flex
+                                            justify-between
+                                            border-bottom pb-16 2xl:pb-24">
+                                            <div class="w-full md:w-2/5 ">
+                                              <p class="text-white font-bold
+                                                text-xl
+                                                xl:text-2xl title">Stay in touch</p>
+                                              <p class="text-white mt-3 text-md
+                                                xl:text-xl opacity-50">We
+                                                combine
+                                                the best of both worlds, private
+                                                and
+                                                agency
+                                                sales and upgrade our service
+                                                using
+                                                modern technology.</p>
+                                            </div>
+                                            <div class="w-full md:w-2/5">
+                                              <div class="flex justify-between">
+                                                <p class="text-white mt-3
+                                                  text-md
+                                                  xl:text-xl">Enter your email
+                                                  address</p>
+                                                <p class="text-white mt-3
+                                                  text-md
+                                                  xl:text-xl font-medium
+                                                  cursor-pointer">SUBSCRIBE</p>
+                                              </div>
+                                              <input class="mt-2 p-3
+                                                custom-input
+                                                w-full"/>
+                                            </div>
+                                          </div>
+                                          <div class="w-full md:flex
+                                            justify-between
+                                            border-bottom pb-24 2xl:pb-36
+                                            pt-10">
+                                            <div class="w-full align-recenter
+                                              md:w-2/5 ">
+                                              <p class="text-white font-bold
+                                                text-xl
+                                                xl:text-2xl title ">SilkSwap</p>
+                                              <div class="flex mt-3
+                                                align-recenter">
+                                                <img class="social
+                                                  cursor-pointer"
+                                                  src="img/social/facebook.png"
+                                                  />
+                                                <img class="social
+                                                  cursor-pointer"
+                                                  src="img/social/github.png"/>
+                                                <img class="social
+                                                  cursor-pointer"
+                                                  src="img/social/youtube.png"
+                                                  />
+                                              </div>
+                                              <p class="text-white mt-3 text-md
+                                                xl:text-xl opacity-50">10 W
+                                                Point
+                                                Ln., Suite 10-215<br/>
+                                                  Biddeford, ME 04005<br/>
+                                                    United States</p>
+                                                </div>
+                                                <div class="w-full
+                                                  align-recenter
+                                                  md:w-2/5 flex">
+                                                  <div class="w-1/2">
+                                                    <p class="text-xl
+                                                      xl:text-2xl
+                                                      text-white opacity-60">EXPLORE</p>
+                                                    <ul class="mt-2 text-white">
+                                                      <li class="mb-2
+                                                        cursor-pointer">About Us</li>
+                                                      <li class="mb-2
+                                                        cursor-pointer">Blog</li>
+                                                      <li class="mb-2
+                                                        cursor-pointer">Lifestyle</li>
+                                                      <li class="mb-2
+                                                        cursor-pointer"> Getting
+                                                        Started</li>
+                                                      <li class="mb-2
+                                                        cursor-pointer">Get $10</li>
+                                                    </ul>
+                                                  </div>
+                                                  <div class="w-1/2">
+                                                    <p class="text-xl
+                                                      xl:text-2xl
+                                                      text-white opacity-60">SUPPORT</p>
+                                                    <ul class="mt-2 text-white">
+                                                      <li class="mb-2
+                                                        cursor-pointer">Shipping
+                                                        &
+                                                        Returns</li>
+                                                      <li class="mb-2
+                                                        cursor-pointer">Privacy
+                                                        Policy</li>
+                                                      <li class="mb-2
+                                                        cursor-pointer">Terms &
+                                                        Conditions</li>
+                                                      <li class="mb-2
+                                                        cursor-pointer">Warranty
+                                                        Policy</li>
+                                                      <li class="mb-2
+                                                        cursor-pointer">Contact
+                                                        Us</li>
+                                                    </ul>
+                                                  </div>
+
+                                                </div>
+                                              </div>
+                                              <div class="w-full lg:flex
+                                                justify-between py-4
+                                                text-white">
+                                                <p class="align-recenter">©
+                                                  SilkSwap
+                                                  2022. All Rights
+                                                  Reserved.</p>
+                                                <ul class="flex align-recenter">
+                                                  <li class="mr-4
+                                                    cursor-pointer">Facebook</li>
+                                                  <li class="mr-4
+                                                    cursor-pointer">Twitter</li>
+                                                  <li class="mr-4
+                                                    cursor-pointer">Telegram</li>
+                                                  <li class="mr-4
+                                                    cursor-pointer">Contact</li>
+                                                </ul>
+                                                <div class="flex
+                                                  align-recenter">
+                                                  <img src="img/footer-logo.png"
+                                                    class="mr-2"/>
+                                                  <p>A Breza Company</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </section>
+
+                                        </body>
+                                      </html>

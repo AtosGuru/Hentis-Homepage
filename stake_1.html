@@ -1,0 +1,743 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/src.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/src.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>SilkSwap</title>
+  </head>
+
+  <body class="body-container block lg:flex w-full justify-between bg-grey
+    app-container  lg:overflow-hidden
+    h-vw">
+    <section class="app-mobile-nav w-full block lg:hidden">
+      <p class="logo-title mr-4 py-10 items-center flex justify-center
+        title">SilkSwap.</p>
+      <div class="w-full justify-center mt-4">
+        <div class="flex md:hidden justify-center">
+          <a href="#" class=" text-sm font-semibold
+            hover:text-gray-600 mx-4">Trade</a>
+          <a href="stake_1.html" class=" text-sm font-semibold
+            hover:text-gray-600 mr-4">Staking</a>
+          <a href="#" class=" text-sm font-semibold
+            hover:text-gray-600 mr-4">About</a>
+          <a href="#" class=" text-sm font-semibold
+            hover:text-gray-600 mr-4">Contact</a>
+        </div>
+      </section>
+      <section class="app-sidebar hidden lg:block w-1/3 bg-blue-600
+        rounded-tr-5xl
+        rounded-br-5xl">
+        <p class="logo-title mr-4 py-10 items-center flex justify-center
+          title">SilkSwap.</p>
+        <div class="w-full justify-center mt-4">
+          <div class="flex md:hidden justify-center">
+            <a href="#" class="text-white text-sm font-semibold
+              hover:text-gray-600 mx-4">Trade</a>
+            <a href="stake_1.html" class="text-white text-sm font-semibold
+              hover:text-gray-600 mr-4">Staking</a>
+            <a href="#" class="text-white text-sm font-semibold
+              hover:text-gray-600 mr-4">About</a>
+            <a href="#" class="text-white text-sm font-semibold
+              hover:text-gray-600 mr-4">Contact</a>
+          </div>
+        </div>
+        <div class="px-14 py-32">
+          <p class="text-white text-3xl md:text-4xl
+            xl:text-5xl 2xl:text-6xl title font-medium">Stake with one
+            of the biggest APR
+            on the market.</p>
+          <p class="text-white text-xl xl:text-2xl 2xl:text-3xl mt-14">
+            CornSwap has the most users of any decentralized platform, ever.
+          </p>
+        </div>
+      </section>
+
+      <section class="app-main w-full lg:w-2/3 relative md:overflow-hidden">
+        <div class="nav app-header ">
+          <div class=" w-full m-0 bg-transparent flex">
+            <div class="w-full">
+              <div class="mx-auto ">
+                <div class="flex items-center justify-between py-4">
+                  <div class="hidden md:flex sm:items-center ">
+                    <a href="#" class=" text-sm font-semibold
+                      hover:text-gray-600 mr-5">Trade</a>
+                    <a href="stake_1.html" class=" text-sm font-semibold
+                      hover:text-gray-600 mr-5">Staking</a>
+                    <a href="#" class=" text-sm font-semibold
+                      hover:text-gray-600 mr-5">About</a>
+                    <a href="#" class=" text-sm font-semibold
+                      hover:text-gray-600 ">Contact</a>
+                  </div>
+
+                  <div class="flex sm:items-center ">
+                    <a href="#_" class=" inline-block px-2 py-2
+                      mx-auto
+                      text-white
+                      rounded-full md:mx-0
+                      bg-gray mr-4 connect-btn bg-dark">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24
+                        24" fill="currentColor" class="w-6 h-6 color-yellow">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077
+                          1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093
+                          1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271
+                          1.136-.964 2.033-1.96 1.425L12 18.354 7.373
+                          21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433
+                          2.082-5.006z" clip-rule="evenodd" />
+                        </svg>
+                      </a>
+                      <a href="#_" class=" flex inline-block px-4 py-2 mx-auto
+                        rounded-full md:mx-0
+                        bg-gray mr-4 connect-btn non-a">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0
+                          24
+                          24"
+                          fill="currentColor" class="w-6 h-6 size-10
+                          text-white
+                          mr-2">
+                          <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75
+                            4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365
+                            9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0
+                            00-1.5
+                            0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5
+                            0v-2.25H15a.75.75 0 000-1.5h-2.25V9z"
+                            clip-rule="evenodd" />
+                          </svg>
+                          Ethereum Mainnet
+                        </a>
+                        <a href="#_" class="flex inline-block px-8
+                          py-2 mx-auto
+                          text-white
+                          rounded-full hover:bg-blue-700 md:mx-0
+                          bg-red-600 ml-4 wallet-connect
+                          justify-center">
+                          Connect
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center flex-col app-body">
+              <div class="py-4 overflow-auto w-full flex justif-center
+                items-center flex-col background-transparent">
+                <div class="swap-platform w-full md:w-2/3 lg:w-full xl:w-2/3
+                  2xl:w-5/12 p-8
+                  ">
+                  <p class="text-xl justify-end flex px-6 pb-2">
+                    <span class="text-grey-600">Balance: </span>
+                    <span class="font-bold">2.508298 </span>
+                  </p>
+                  <div class="selector p-2 lg:p-8 flex
+                    justify-between bg-grey rounded-full m-0"
+                    id="select_token_1"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalCenteredScrollable">
+                    <div class="flex items-center ">
+                      <img src="img/ethereum.png">
+                      <div class="px-2">
+                        <p class="">Ethereum
+                          (ETH)</p>
+                        <p class="text-md lg:text-2xl
+                          font-bold">
+
+                          <input class="amount-input text-left"
+                            placeholder="0.00" id="amount_3" />
+
+                        </p>
+                      </div>
+                    </div>
+                    <p class=" flex
+                      items-center">
+                      <span class="max-btn px-2
+                        text-black
+                        mr-2" id="max_3">Max</span>
+                      <a href="#_" class=" inline-block px-2 py-2
+                        mx-auto
+                        text-white
+                        rounded-full md:mx-0
+                        bg-gray connect-btn bg-dark text-center justify-center
+                        opacity-50" onClick="openSelectTokenModal()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 24 24" stroke-width="1.5"
+                          stroke="currentColor" class="w-4 h-4">
+                          <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                          </svg>
+
+                        </a>
+                      </p>
+                    </div>
+
+                    <div class="mt-4">
+                      <p class="flex justify-between px-4">
+                        <span class="font-bold">Loking period</span>
+                        <span class="text-gray-600">14 weeks</span>
+                      </p>
+                      <div class="w-full px-4 mt-2">
+                        <input type="range" list="tickmarks" value="50" min="0"
+                          max="100" class="w-full">
+
+                      </div>
+                    </div>
+
+
+                    <div class="mt-4 px-4">
+                      <div class="flex py-2 justify-between border-dotted
+                        border-b-2 border-gray-300">
+                        <p class="text-xl">Staking end date</p>
+                        <p class="text-xl text-gray-600">26 Oct 2023</p>
+                      </div>
+                      <div class="flex py-2 justify-between border-dotted
+                        border-b-2 border-gray-300">
+                        <p class="text-xl">Est. APR (%) </p>
+                        <p class="text-xl text-gray-600">85%</p>
+                      </div>
+                      <div class="flex py-2 justify-between border-dotted
+                        border-b-2 border-gray-300">
+                        <p class="text-xl">Bonus applied</p>
+                        <p class="text-xl text-green-600 font-bold">+0.7587777
+                          (+6%)</p>
+                      </div>
+                      <div class="flex py-2 justify-between border-dotted
+                        border-b-2 border-gray-300">
+                        <p class="text-xl">You'll receive</p>
+                        <p class="text-xl font-bold">3.785698 ETH</p>
+                      </div>
+                    </div>
+                    <a href="#_" class="inline-block px-5 py-3
+                      mt-2
+                      w-full text-white rounded-full
+                      md:mx-0 texl-2xl
+                      2xl:text-3xl
+                      text-center bg-red-600 wallet-connect"
+                      id="swap_btn_success">
+                      Stake ETH
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="app-footer w-full flex justify-between
+                ">
+                <div class=" w-full m-0 bg-transparent flex ">
+
+                  <div class="w-full">
+                    <div class="mx-auto ">
+                      <div class="flex items-center justify-between
+                        py-4">
+                        <div class="hidden md:flex sm:items-center ">
+                          <a href="#" class=" text-sm font-semibold
+                            hover:text-gray-600 mr-4">Facebook</a>
+                          <a href="#" class=" text-sm font-semibold
+                            hover:text-gray-600 mr-4">Twitter</a>
+                          <a href="#" class=" text-sm font-semibold
+                            hover:text-gray-600 mr-4">Telegram</a>
+                          <a href="#" class=" text-sm font-semibold
+                            hover:text-gray-600 ">Contact</a>
+                        </div>
+
+                        <div class="flex sm:items-center ">
+                          <a href="#_" class=" flex inline-block px-4
+                            py-2
+                            mx-auto
+                            rounded-full md:mx-0
+                            bg-gray mr-4 connect-btn non-a">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24
+                              24"
+                              fill="currentColor" class="w-6 h-6
+                              size-10
+                              text-white
+                              mr-2">
+                              <path fill-rule="evenodd" d="M12
+                                2.25c-5.385
+                                0-9.75
+                                4.365-9.75 9.75s4.365 9.75 9.75 9.75
+                                9.75-4.365
+                                9.75-9.75S17.385 2.25 12 2.25zM12.75
+                                9a.75.75 0
+                                00-1.5
+                                0v2.25H9a.75.75 0 000
+                                1.5h2.25V15a.75.75
+                                0
+                                001.5
+                                0v-2.25H15a.75.75 0 000-1.5h-2.25V9z"
+                                clip-rule="evenodd" />
+                              </svg>
+                              <span class="mr-1">Last synced block:</span>
+                              <span class="text-white">13609303</span>
+                            </a>
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <div class="flex items-center justify-center
+                        py-4">
+                        <div class="flex md:hidden sm:items-center ">
+                          <a href="#" class=" text-sm font-semibold
+                            hover:text-gray-600 mr-4">Facebook</a>
+                          <a href="#" class=" text-sm font-semibold
+                            hover:text-gray-600 mr-4">Twitter</a>
+                          <a href="#" class=" text-sm font-semibold
+                            hover:text-gray-600 mr-4">Telegram</a>
+                          <a href="#" class=" text-sm font-semibold
+                            hover:text-gray-600 ">Contact</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="modal fade fixed top-0 left-0 hidden w-full
+                h-full outline-none overflow-x-hidden overflow-y-auto
+                dark-overlay setting_modal"
+                id="setting_modal" tabindex="-1"
+                aria-labelledby="exampleModalCenteredScrollable"
+                aria-modal="true" role="dialog">
+                <div class="modal-dialog modal-dialog-centered
+                  modal-dialog-scrollable relative w-auto
+                  pointer-events-none h-screen flex">
+                  <div class="modal-content border-none shadow-lg relative
+                    flex flex-col pointer-events-auto bg-white
+                    bg-clip-padding rounded-md outline-none text-current
+                    w-full md:w-2/3 lg:w-1/2 xl:w-5/12 2xl:w-1/4
+                    justify-center items-center m-auto px-4 pb-10">
+                    <div class="modal-header flex
+                      items-center justify-between p-4
+                      border-gray-200 rounded-t-md pt-8 w-full">
+                      <p class="text-3xl font-bold">Settings</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6
+                        cursor-pointer text-4xl" id="close_setting_btn">
+                        <path stroke-linecap="round"
+                          stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"
+                          />
+                        </svg>
+                      </div>
+                      <div class="modal-body relative p-4 w-full ">
+                        <p class="text-2xl font-medium ">Swaps and
+                          Liquidity</p>
+                        <div class="bg-grey rounded-md p-4 mt-2">
+                          <p class="text-xl">Default Transaction Speed
+                            (GWEI)</p>
+                          <div class="flex mt-1">
+                            <p class="common-btn active">Standard(9)</p>
+                            <p class="common-btn">Fast(4)</p>
+                            <p class="common-btn">Instant(2)</p>
+                          </div>
+                        </div>
+                        <div class="bg-grey rounded-md p-4 mt-1">
+                          <p class="text-xl">Slippage Tollerance</p>
+                          <div class="flex mt-1">
+                            <p class="common-btn active">0.1%</p>
+                            <p class="common-btn">0.5%</p>
+                            <p class="common-btn">1%</p>
+                            <p class="common-white-btn">...</p>
+                          </div>
+                        </div>
+                        <div class="border-top mt-4 pb-8 w-full">
+                          <div class="flex justify-between mb-2 py-2">
+                            <p class="text-xl">Tx deadline(mins)</p>
+                            <div class="relative inline-block w-10 mr-2
+                              align-middle select-none transition
+                              duration-200 ease-in">
+                              <input type="checkbox" name="toggle"
+                                id="toggle" class="toggle-checkbox
+                                absolute block w-6 h-6 rounded-full
+                                bg-white border-4 appearance-none
+                                cursor-pointer"/>
+                              <label for="toggle" class="toggle-label
+                                block overflow-hidden h-6 rounded-full
+                                bg-gray-300 cursor-pointer"></label>
+                            </div>
+                          </div>
+                          <div class="flex justify-between mb-2 py-2">
+                            <p class="text-xl">Zap(Beta)</p>
+                            <div class="relative inline-block w-10 mr-2
+                              align-middle select-none transition
+                              duration-200 ease-in">
+                              <input type="checkbox" name="toggle"
+                                id="toggle" class="toggle-checkbox
+                                absolute block w-6 h-6 rounded-full
+                                bg-white border-4 appearance-none
+                                cursor-pointer"/>
+                              <label for="toggle" class="toggle-label
+                                block overflow-hidden h-6 rounded-full
+                                bg-gray-300 cursor-pointer"></label>
+                            </div>
+                          </div>
+                          <div class="flex justify-between mb-2 py-2">
+                            <p class="text-xl">Export Mode</p>
+                            <div class="relative inline-block w-10 mr-2
+                              align-middle select-none transition
+                              duration-200 ease-in">
+                              <input type="checkbox" name="toggle"
+                                id="toggle" class="toggle-checkbox
+                                absolute block w-6 h-6 rounded-full
+                                bg-white border-4 appearance-none
+                                cursor-pointer"/>
+                              <label for="toggle" class="toggle-label
+                                block overflow-hidden h-6 rounded-full
+                                bg-gray-300 cursor-pointer"></label>
+                            </div>
+                          </div>
+                          <div class="flex justify-between mb-2 py-2">
+                            <p class="text-xl">Disable Multihops</p>
+                            <div class="relative inline-block w-10 mr-2
+                              align-middle select-none transition
+                              duration-200 ease-in">
+                              <input type="checkbox" name="toggle"
+                                id="toggle" class="toggle-checkbox
+                                absolute block w-6 h-6 rounded-full
+                                bg-white border-4 appearance-none
+                                cursor-pointer"/>
+                              <label for="toggle" class="toggle-label
+                                block overflow-hidden h-6 rounded-full
+                                bg-gray-300 cursor-pointer"></label>
+                            </div>
+                          </div>
+                          <div class="flex justify-between mb-2 py-2">
+                            <p class="text-xl">Flipy sounds</p>
+                            <div class="relative inline-block w-10 mr-2
+                              align-middle select-none transition
+                              duration-200 ease-in">
+                              <input type="checkbox" name="toggle"
+                                id="toggle" class="toggle-checkbox
+                                absolute block w-6 h-6 rounded-full
+                                bg-white border-4 appearance-none
+                                cursor-pointer"/>
+                              <label for="toggle" class="toggle-label
+                                block overflow-hidden h-6 rounded-full
+                                bg-gray-300 cursor-pointer"></label>
+                            </div>
+
+
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div
+                      class="modal-footer flex flex-shrink-0 flex-wrap
+                      items-center justify-end p-4
+                      border-gray-200 rounded-b-md ">
+
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal fade fixed top-0 left-0 hidden w-full
+                  h-full outline-none overflow-x-hidden overflow-y-auto
+                  dark-overlay token-selector-modal"
+                  id="token_select_modal" tabindex="-1"
+                  aria-labelledby="exampleModalCenteredScrollable"
+                  aria-modal="true" role="dialog">
+                  <div class="modal-dialog modal-dialog-centered
+                    modal-dialog-scrollable relative w-auto
+                    pointer-events-none h-screen flex">
+                    <div class="modal-content border-none shadow-lg
+                      relative
+                      flex flex-col pointer-events-auto bg-white
+                      bg-clip-padding rounded-md outline-none text-current
+                      w-full md:w-2/3 lg:w-1/2 xl:w-5/12 2xl:w-1/4
+                      justify-center items-center m-auto px-4 pb-10">
+                      <div class="modal-header flex
+                        items-center justify-between p-4
+                        border-gray-200 rounded-t-md pt-8 w-full">
+                        <input placeholder="Search a coin..." class="px-4
+                          bg-grey rounded-full w-full color-white p-3
+                          mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24" stroke-width="1.5"
+                          stroke="currentColor" class="w-6 h-6
+                          cursor-pointer text-4xl" id="close_token_2">
+                          <path stroke-linecap="round"
+                            stroke-linejoin="round" d="M6 18L18 6M6 6l12
+                            12"
+                            />
+                          </svg>
+
+
+                        </div>
+                        <div class="modal-body relative p-4
+                          token-selector-list w-full">
+                          <div class="listed-token py-2 flex w-full
+                            justify-between items-center">
+                            <div class="flex items-center">
+                              <img src="img/token/ethereum.png"
+                                class="mr-2"/>
+                              <p class="font-medium text-xl">Ethereum
+                                (ETH)</p>
+                            </div>
+                            <p class="text-xl">2.57362</p>
+                          </div>
+                          <div class="listed-token py-2 flex w-full
+                            justify-between items-center">
+                            <div class="flex items-center">
+                              <img src="img/token/bnb.png" class="mr-2"/>
+                              <p class="font-medium text-xl">Binance (BNB)</p>
+                            </div>
+                            <p class="text-xl">4.093</p>
+                          </div>
+                          <div class="listed-token py-2 flex w-full
+                            justify-between items-center">
+                            <div class="flex items-center">
+                              <img src="img/token/usdt.png" class="mr-2"/>
+                              <p class="font-medium text-xl">Tether (USDT)</p>
+                            </div>
+                            <p class="text-xl">0.00</p>
+                          </div>
+                          <div class="listed-token py-2 flex w-full
+                            justify-between items-center">
+                            <div class="flex items-center">
+                              <img src="img/token/usdc.png" class="mr-2"/>
+                              <p class="font-medium text-xl">USD Coin
+                                (USDC)</p>
+                            </div>
+                            <p class="text-xl">2.57362</p>
+                          </div>
+                          <div class="listed-token py-2 flex w-full
+                            justify-between items-center">
+                            <div class="flex items-center">
+                              <img src="img/token/uniswap.png"
+                                class="mr-2"/>
+                              <p class="font-medium text-xl">Uniswap (UNI)</p>
+                            </div>
+                            <p class="text-xl">2.57362</p>
+                          </div>
+                          <div class="listed-token py-2 flex w-full
+                            justify-between items-center">
+                            <div class="flex items-center">
+                              <img src="img/token/tron.png" class="mr-2"/>
+                              <p class="font-medium text-xl">Tron (TRX)</p>
+                            </div>
+                            <p class="text-xl">2.57362</p>
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <div
+                        class="modal-footer flex flex-shrink-0 flex-wrap
+                        items-center justify-end p-4
+                        border-gray-200 rounded-b-md ">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade fixed top-0 left-0 hidden w-full
+                    h-full outline-none overflow-x-hidden overflow-y-auto
+                    dark-overlay swap-success-modal"
+                    id="swap_success_modal" tabindex="-1"
+                    aria-labelledby="exampleModalCenteredScrollable"
+                    aria-modal="true" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered
+                      modal-dialog-scrollable relative w-auto
+                      pointer-events-none h-screen flex">
+                      <div class="modal-content border-none shadow-lg
+                        relative
+                        flex flex-col pointer-events-auto bg-white
+                        bg-clip-padding rounded-md outline-none text-current
+                        w-full md:w-2/3 lg:w-1/2 xl:w-5/12 2xl:w-1/4
+                        justify-center items-center m-auto px-4 pb-10">
+                        <div class="modal-header flex
+                          items-center p-4
+                          border-gray-200 rounded-t-md pt-8 w-full
+                          justify-end">
+
+                          <svg xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6
+                            cursor-pointer text-4xl float-right"
+                            id="swap_success_close">
+                            <path stroke-linecap="round"
+                              stroke-linejoin="round" d="M6 18L18 6M6 6l12
+                              12"
+                              />
+                            </svg>
+
+
+                          </div>
+                          <div class="modal-body relative p-4
+                            w-full">
+                            <img class="text-center justify-center m-auto
+                              mb-4" src="img/mark/check-mark.png"/>
+                            <p class="text-3xl text-center font-bold">Transcation
+                              Initiated</p>
+                            <p class="mt-2 text-center text-xl">CornSwap has
+                              the most users of any decentralized platform,
+                              ever. </p>
+                            <div class="listed-token py-2 flex w-full
+                              justify-between items-center mt-4">
+                              <div class="flex items-center">
+                                <img src="img/token/tron.png" class="mr-2"/>
+                                <p class="font-medium text-xl">Tron (TRX)</p>
+                              </div>
+                              <p class="text-xl custom-link">Add to Metamask</p>
+                            </div>
+                            <a href="#_" class="inline-block px-5 py-3
+                              mt-4
+                              w-full text-white rounded-full
+                              md:mx-0 texl-xxl
+                              2xl:text-2xl
+                              text-center bg-red-600 wallet-connect">
+                              Done
+                            </a>
+                          </div>
+
+                        </div>
+                        <div
+                          class="modal-footer flex flex-shrink-0 flex-wrap
+                          items-center justify-end p-4
+                          border-gray-200 rounded-b-md ">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal fade fixed top-0 left-0 hidden
+                      w-full
+                      h-full outline-none overflow-x-hidden
+                      overflow-y-auto
+                      dark-overlay token-selector-modal"
+                      id="token_select_modal" tabindex="-1"
+                      aria-labelledby="exampleModalCenteredScrollable"
+                      aria-modal="true" role="dialog">
+                      <div class="modal-dialog modal-dialog-centered
+                        modal-dialog-scrollable relative w-auto
+                        pointer-events-none h-screen flex">
+                        <div class="modal-content border-none
+                          shadow-lg
+                          relative
+                          flex flex-col pointer-events-auto bg-white
+                          bg-clip-padding rounded-md outline-none
+                          text-current
+                          w-full md:w-2/3 lg:w-1/2 xl:w-5/12 2xl:w-1/4
+                          justify-center items-center m-auto px-4
+                          pb-10">
+                          <div class="modal-header flex
+                            items-center justify-between p-4
+                            border-gray-200 rounded-t-md pt-8 w-full">
+                            <input placeholder="Search a coin..."
+                              class="px-4
+                              bg-grey rounded-full w-full color-white
+                              p-3
+                              mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24" stroke-width="1.5"
+                              stroke="currentColor" class="w-6 h-6
+                              cursor-pointer text-4xl"
+                              id="close_token_2">
+                              <path stroke-linecap="round"
+                                stroke-linejoin="round" d="M6 18L18
+                                6M6
+                                6l12
+                                12"
+                                />
+                              </svg>
+
+
+                            </div>
+                            <div class="modal-body relative p-4
+                              token-selector-list w-full">
+                              <div class="listed-token py-2 flex
+                                w-full
+                                justify-between items-center"
+                                onClick="tokenSelected()">
+                                <div class="flex items-center">
+                                  <img src="img/token/usdt.png"
+                                    class="mr-2"/>
+                                  <p class="font-medium text-xl">Tether
+                                    (USDT)</p>
+                                </div>
+                                <p class="text-xl">159.02</p>
+                              </div>
+                              <div class="listed-token py-2 flex
+                                w-full
+                                justify-between items-center">
+                                <div class="flex items-center">
+                                  <img src="img/token/ethereum.png"
+                                    class="mr-2"/>
+                                  <p class="font-medium text-xl ">Ethereum
+                                    (ETH)</p>
+                                </div>
+                                <p class="text-xl">2.57362</p>
+                              </div>
+                              <div class="listed-token py-2 flex
+                                w-full
+                                justify-between items-center">
+                                <div class="flex items-center">
+                                  <img src="img/token/bnb.png"
+                                    class="mr-2"/>
+                                  <p class="font-medium text-xl">Binance
+                                    (BNB)</p>
+                                </div>
+                                <p class="text-xl">4.093</p>
+                              </div>
+
+                              <div class="listed-token py-2 flex
+                                w-full
+                                justify-between items-center">
+                                <div class="flex items-center">
+                                  <img src="img/token/usdc.png"
+                                    class="mr-2"/>
+                                  <p class="font-medium text-xl">USD
+                                    Coin
+                                    (USDC)</p>
+                                </div>
+                                <p class="text-xl">2.57362</p>
+                              </div>
+                              <div class="listed-token py-2 flex
+                                w-full
+                                justify-between items-center">
+                                <div class="flex items-center">
+                                  <img src="img/token/uniswap.png"
+                                    class="mr-2"/>
+                                  <p class="font-medium text-xl">Uniswap
+                                    (UNI)</p>
+                                </div>
+                                <p class="text-xl">2.57362</p>
+                              </div>
+                              <div class="listed-token py-2 flex
+                                w-full
+                                justify-between items-center">
+                                <div class="flex items-center">
+                                  <img src="img/token/tron.png"
+                                    class="mr-2"/>
+                                  <p class="font-medium text-xl">Tron
+                                    (TRX)</p>
+                                </div>
+                                <p class="text-xl">2.57362</p>
+                              </div>
+
+                            </div>
+
+                          </div>
+                          <div
+                            class="modal-footer flex flex-shrink-0
+                            flex-wrap
+                            items-center justify-end p-4
+                            border-gray-200 rounded-b-md ">
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </body>
+                </html>
